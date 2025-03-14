@@ -1,0 +1,59 @@
+ /* Адаптивность */
+ @media (max-width: 768px) {
+
+    header {
+        
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    .section {
+        height: 100vh;
+    }
+}
+@media (max-width: 480px) {
+    .responsive-btn {
+        margin-top: 30px;
+        width: 200px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+        .card{
+            height: 222px;
+        }
+    .photo{
+            width: 100px;
+        }
+    }
+        @media (max-width: 380px) {
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 40px;
+                margin-top: 30px;
+            }
+            .responsive-btn {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               gap: 40px;
+            }
+            .photo{
+                display: none;
+            }
+            .card{
+                height: 130px;
+                width: 200px;
+            }
+            .cards{
+                gap: 70px;
+            }
+    }
+    

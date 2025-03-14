@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <title>megzas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/Adaptive.css">
+</head>
+<body>
+  <!-- Добавление музыки (по умолчанию не проигрывается) -->
+   <audio id="background-music" loop=""><source src=
+  "music/lofi.mp3" type="audio/mp3"> Your browser does not support
+  the audio element.</audio>
+  <header>
+    <ul>
+      <li>
+        <a href="javascript:void(0)" onclick=
+        "navigateToSection('home')">home</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" onclick=
+        "navigateToSection('friends')">friends</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" onclick=
+        "navigateToSection('more-info')">info</a>
+      </li>
+    </ul>
+  </header><!-- Анимация частиц -->
+  <div id="particles-container"></div><!-- Основной контейнер -->
+  <div class="main-container">
+    <!-- Бургер-меню -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div><!-- Мобильное меню -->
+    <div class="menu" id="mobile-menu">
+      <ul>
+        <li>
+          <a href="javascript:void(0)" onclick=
+          "navigateToSection('home')">home</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" onclick=
+          "navigateToSection('friends')">friends</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" onclick=
+          "navigateToSection('more-info')">info</a>
+        </li>
+      </ul>
+    </div><!-- Секции -->
+    <div id="home" class="section">
+      <h2>wsscode - the best worker for earth</h2>
+      <div class="volume-control">
+        <input type="range" class="volume-slider" min="0" max="100"
+        value="50" id="volumeControl">
+      </div>
+    </div>
+    <div id="friends" class="section">
+      <h1> i have a lot friends</h1>
+      </h1>
+      </div>
+    </div>
+    <div id="more-info" class="section">
+      <div class="backr">
+        <h2>Info</h2><a href="https://t.me/rinkameri"
+        target="_blank"><button class="responsive-btn">He made website</button></a> <a href="https://t.me/megzas"
+        target="_blank"><button class="responsive-btn">my
+        telegram</button></a> <a href="https://t.me/meggzass"
+        target="_blank"><button class="responsive-btn">my
+        shop</button></a>
+      </div>
+    </div><!-- Анимация на Three.js -->
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <script src="js/script.js"></script>
+  </div>
+</body>
+</html>
